@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'tachyons'
+import './index.css'
+import Home from './containers/Tab/Home'
+import FormApp from './containers/Form/FormApp'
+import Option from './components/Options/Option'
+import SigninApp from './containers/Signin/SigninApp'
+import Resources from './components/Tab/Resources'
+import Contact from './components/Tab/Contact'
+import {HashRouter, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <HashRouter basename = '/'>
+        <Route path = "/" exact component = {Home}/>
+        <Route path = "/Option" component = {Option} />
+        <Route path = "/Resources" exact component = {Resources}/>
+        <Route path = "/Contact" component = {Contact} />
+    </HashRouter>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
