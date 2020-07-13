@@ -12,16 +12,16 @@ class Right extends React.Component{
     }
   }
   componentDidMount(){
-    this.setState({
-      loading: true
-    })
+   
     fetch('https://aztecback.herokuapp.com/updateScore')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
         this.setState({
           names: [...this.state.names, item.name],
-          scores: [...this.state.scores, item.score]
+          scores: [...this.state.scores, item.score],
+          loading: true
+
         })
         //console.log(item.name)
       });
