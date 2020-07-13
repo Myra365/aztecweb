@@ -1,14 +1,20 @@
 import React from 'react'
 import Ranking from './Right-Ranking/Ranking'
+import Spinner from 'react-bootstrap/Spinner'
+
 class Right extends React.Component{
   constructor(){
     super()
     this.state = {
       names: [],
-      scores: []
+      scores: [],
+      loading: false
     }
   }
   componentDidMount(){
+    this.setState({
+      loading: true
+    })
     fetch('https://aztecback.herokuapp.com/updateScore')
     .then(response => response.json())
     .then(data => {
@@ -26,7 +32,15 @@ class Right extends React.Component{
 
     render(){
       //Right column data
-     
+      if(!this.state.loading){
+        return(
+          <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+          </Spinner>
+        )
+
+      }
+      else{
         return(
           <div>
           <h3 className = "bb bw2">Ranking</h3>
@@ -57,13 +71,13 @@ class Right extends React.Component{
             </tr>
             <tr>
                 <td className="pv3 pr3 bb b--black-20">{4}</td>
-                <td className="pv3 pr3 bb b--black-20">{this.state.names[2]} </td>
-                <td className="pv3 pr3 bb b--black-20">{30}</td>
+                <td className="pv3 pr3 bb b--black-20">{this.state.names[3]} </td>
+                <td className="pv3 pr3 bb b--black-20">{this.state.scores[3]}</td>
             </tr>
             <tr>
                 <td className="pv3 pr3 bb b--black-20">{5}</td>
-                <td className="pv3 pr3 bb b--black-20">{this.state.names[2]} </td>
-                <td className="pv3 pr3 bb b--black-20">{30}</td>
+                <td className="pv3 pr3 bb b--black-20">{this.state.names[4]} </td>
+                <td className="pv3 pr3 bb b--black-20">{this.state.scores[4]}</td>
             </tr>
             </tbody>
           </table>
@@ -71,6 +85,7 @@ class Right extends React.Component{
 
       </div>
         )
+      }
     }
 }
 export default Right
