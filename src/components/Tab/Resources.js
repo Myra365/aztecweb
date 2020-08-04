@@ -52,6 +52,14 @@ class Resources extends React.Component{
                     </div>
                     </li>
                 </a>
+                <a href="https://www.freckle.com/" className="f6 link blue hover-dark-gray">
+                    <li className="flex items-center lh-copy pa3 ph0-l bb b--black-10 grow">
+                    <img className="w2 h2 w3-ns h3-ns br-100" src='./Images/frecklepig.png' alt = "icon"/>
+                    <div className="pl3 flex-auto">
+                        <span className="f6 db black-70">Freckle</span>
+                    </div>
+                    </li>
+                </a>
             </ul>
             <h3 className = 'tc'>Lectura Y Lenguaje</h3>
             <ul className="list pl0 mt0 measure center border border-info shadow-lg p-3 mb-5 rounded shadow-hover">
@@ -97,7 +105,7 @@ class Resources extends React.Component{
                     </li>
                 </a>
             </ul>
-            <h3 className = "tc">ELA/Literatura</h3>
+            <h3 className = "tc">common used links/ enlaces mas usados</h3>
             <ul className="list pl0 mt0 measure center border border-info shadow-lg p-3 mb-5 rounded shadow-hover">
                 <a href="https://classroom.google.com/u/0/h" className="f6 link blue hover-dark-gray">
                     <li className="flex items-center lh-copy pa3 ph0-l bb b--black-10 grow">
