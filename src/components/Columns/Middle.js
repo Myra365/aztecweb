@@ -16,8 +16,8 @@ class Middle extends React.Component{
                       <h3>¡Bienvenidos a Cuarto Grado!</h3>
                       <p className = "f4 lh-copy measure">
                       Estimados estudiantes y familias,
-                      ¡Bienvenidos al 4to grado! Estoy entusiasmado con la oportunidad de conocerte y espero tener un año escolar feliz y productivo. Incluido en este sitio web encontrará recursos para apoyar a su hijo en casa en cualquier momento.
-                      OUna vez más, bienvenidos al 4to grado. ¡Trabajemos juntos para hacer de este el mejor año de todos!
+                      ¡Bienvenidos al 4to grado! Estoy entusiasmada con la oportunidad de conocerte y espero tener un año escolar feliz y productivo. Incluido en este sitio web encontrará recursos para apoyar a su hijo en casa en cualquier momento.
+                      Una vez más, bienvenidos al 4to grado. ¡Trabajemos juntos para hacer de este el mejor año de todos!
                      
                       </p>
                       <p className = "f4 lh-copy measure">Sinceramente,</p>
