@@ -104,6 +104,22 @@ class Resources extends React.Component{
                     </div>
                     </li>
                 </a>
+                <a href="https://www.myon.com/library/browse.html" className="f6 link blue hover-dark-gray">
+                    <li className="flex items-center lh-copy pa3 ph0-l bb b--black-10 grow">
+                    <img className="w2 h2 w3-ns h3-ns br-100" src='./Images/myon.png' alt = "icon"/>
+                    <div className="pl3 flex-auto">
+                        <span className="f6 db black-70">Myon </span>
+                    </div>
+                    </li>
+                </a>
+                <a href="https://global-zone53.renaissance-go.com/welcomeportal/277467" className="f6 link blue hover-dark-gray">
+                    <li className="flex items-center lh-copy pa3 ph0-l bb b--black-10 grow">
+                    <img className="w2 h2 w3-ns h3-ns br-100" src='./Images/Renaissance.png' alt = "icon"/>
+                    <div className="pl3 flex-auto">
+                        <span className="f6 db black-70">Renaissance </span>
+                    </div>
+                    </li>
+                </a>
             </ul>
             <h3 className = "tc">common used links/ enlaces mas usados</h3>
             <ul className="list pl0 mt0 measure center border border-info shadow-lg p-3 mb-5 rounded shadow-hover">
