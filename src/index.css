@@ -4,14 +4,17 @@ body{
     margin: 0;
     padding: 0;
     background: rgb(17,14,79);
+    background: linear-gradient(90deg, rgba(17,14,79,1) 0%, rgba(48,212,228,1) 35%, rgba(122,214,255,1) 100%);
+
+    
+}
+
+/*
     background: url(/Images/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-    
-}
-
-/*background: linear-gradient(90deg, rgba(17,14,79,1) 0%, rgba(48,212,228,1) 35%, rgba(122,214,255,1) 100%);*/
+*/
 .new-font{
     font-family: 'Kranky', cursive;
     color: white;
