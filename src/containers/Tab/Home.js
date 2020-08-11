@@ -19,14 +19,14 @@ class Home extends React.Component{
               </div>
               <div className = "center-box">
               <div className="container">
-                <div className=" row ">
-                  <div className="liner left col shadow-3 glow grow bg-animate">
+                <div className=" row2 ">
+                  <div className="liner left col2 shadow-3 glow grow bg-animate">
                       <Left />
                   </div>
                     <div className="temp liner middle tc shadow-3 glow bg-animate">
                       <Middle/>
                     </div>
-                    <div className="liner right col shadow-3 glow grow bg-animate">
+                    <div className="liner right col2 shadow-3 glow grow bg-animate">
                       <Right/>
                     </div>
                 </div>

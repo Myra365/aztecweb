@@ -74,10 +74,23 @@ body{
     border: 1px solid black;
 }
 
-.row{
+.row2 {
+    display: flex;
+     flex-wrap: wrap; 
+     margin-right: -15px; 
+     margin-left: -15px; 
+}
+
+.col2 {
+    flex-basis: 0;
+    flex-grow: 1;
+    /* min-width: 0; */
+    max-width: 100%;
+}
+/*.row{
     margin-top: 2rem;
     
-}
+}*/
 
 .headings{
     margin-top: 1rem;
@@ -96,27 +109,43 @@ body{
 .f3-l{
     font-size: 1rem;
 } 
-@media only screen and (max-width:769px){
-    .col{
-        display: none;
-    }
-    .temp{
-        flex: 0 0 80%;
-        max-width: 80%;
-    }
 
-    .new-font{
-        font-size: 3rem;
-    }
 
-    .center-box{
-        margin-left: 2rem;
+@media only screen and (max-width:1199px){
+    .row2 {
+        display: flex;
+        flex-wrap: nowrap; 
+        margin-right: 0; 
+        margin-left: 0; 
     }
-    .temp{
-        max-width: 95%;
-    }
-    .email{
-        font-size: .9em;
+    .col2 {
+        flex-basis: 0;
+        flex-grow: 1;
+       
+        max-width: 100%;
     }
     
+}
+@media only screen and (max-width: 750px){
+
+    .row2{
+        flex-wrap: wrap;
+    }
+    .left{
+        margin-right: 0;
+    }
+    .right{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .row2{
+        flex-wrap: wrap
+    }
+    .f-headline{
+        font-size: 4.1rem;
+    }
+
 }
