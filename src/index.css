@@ -3,8 +3,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(17,14,79);
-    background: linear-gradient(90deg, rgba(17,14,79,1) 0%, rgba(48,212,228,1) 35%, rgba(122,214,255,1) 100%);
+   
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(242, 253, 255) 35%, rgb(209, 238, 252) 100%);
 
     
 }
@@ -24,7 +24,7 @@ body{
 }
 
 .aztec{
-    width: 150px;
+    width: 300px;
 }
 
 .title{

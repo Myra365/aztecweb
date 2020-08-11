@@ -15,7 +15,7 @@ class Home extends React.Component{
             <div>
               <Nav/>
               <div className = "temp">
-              <img className = "aztec " src = "./Images/Picture1.png" alt = "atec"/>
+              <img className = "aztec " src = "./Images/myra-icon5T.png" alt = "atec"/>
               </div>
               <div className = "center-box">
               <div className="container">
