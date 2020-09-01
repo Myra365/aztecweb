@@ -2,6 +2,7 @@ import React from 'react'
 import SignForm from './SigninForm'
 import Signout from './Signout'
 import FormApp from '../../containers/Form/FormApp'
+import Dash from '../Dash/Dash'
 
 class Signin extends React.Component{
     constructor(){
@@ -10,7 +11,8 @@ class Signin extends React.Component{
             isUserName: '',
             isPassword: '',
             isWrong: false,
-            isLogged: false
+            isLogged: false,
+            isTeacher: false,
 
         }
         
@@ -52,14 +54,17 @@ class Signin extends React.Component{
         })
         .then(response => response.json())
         .then(data => {
-            
+            if(data === 'Teacher Found'){
+                this.setState({
+                    isTeacher: true
+                })
+            }
             if(data === 'Username Found'){
                this.setState({
                    isLogged: true 
                })
             }
             else{
-                console.log('hello')
                 console.log('iswrong', this.state.isWrong)
                 this.setState({
                     isWrong: true
@@ -71,7 +76,15 @@ class Signin extends React.Component{
     }  
 
     render(){
-        if(this.state.isLogged){
+        if(this.state.isTeacher){
+            return(
+                <div>
+                    <Signout handleOut = {this.handleOut} />
+                    <Dash isUserName = {this.state.isUserName}/>
+                </div>
+            )
+        }
+        else if(this.state.isLogged){
             return(
                 <div>
                     <Signout handleOut = {this.handleOut} />
