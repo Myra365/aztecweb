@@ -12,7 +12,7 @@ class Dash extends React.Component{
         console.log(this.state.isUserName)
         return(
             <div>
-                <h1>Teacher Dashboard</h1>
+                <h1 className = "tc">Teacher Dashboard</h1>
                 <Reset isUserName = {this.state.isUserName}/>
             </div>
         )
